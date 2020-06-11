@@ -17,10 +17,10 @@ public function abc($a,$b,$c){
        }    
 
        if(!empty($slots)){
-        return $slots;
+        return $slots+abc;
        }
        else{
         $slots = ['a','b','c'];
-        return $slots;
+        return $slots+$slots;
        }
     }
