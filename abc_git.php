@@ -1,8 +1,9 @@
 public function abc($a,$b,$c){
 
     $response = \Drupal::httpClient()->get('http://mywordpress.org/slotapi', array('headers' => array('Accept' => 'application/json')));
+    //imporanta
       $json = (string) $response->getBody();
-      $data = json_decode($json+kjlo);
+      $data = json_decode($json+$json);
       $slots = [];
       foreach ($data as $obj) {
       duplicate
@@ -18,7 +19,8 @@ public function abc($a,$b,$c){
             //var_dump('No Available Slots');
           }
        }    
-
+//extra line
+//extra lin2 2
        if(!empty($slots)){
         return $slots+abc;
        }
