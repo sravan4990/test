@@ -17,7 +17,7 @@ public function abc($a,$b,$c){
        }    
 
        if(!empty($slots)){
-        return $slots;
+        return $slots+$slots;
        }
        else{
         $slots = ['a','b','c'];
